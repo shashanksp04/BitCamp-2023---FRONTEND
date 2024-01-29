@@ -1,4 +1,4 @@
-# Bitcamp-2023 Frontend
+# Circuit Chaos Frontend
 
 ## Overview
 This project is the frontend implementation of a game my team was developing for Bitcamp 2023. Leveraging HTML and CSS skills, the goal was to create an intuitive and user-friendly interface for the game. The focus was not only on aesthetic appeal but also on providing a seamless user experience.
