@@ -9,7 +9,7 @@ This project is the frontend implementation of a game my team was developing for
 - **Responsive Design**: The layout is designed to be responsive, ensuring a consistent experience across various devices and screen sizes.
 
 ## Acknowledgment
-I would like to express our gratitude to Bitcamp 2023 for providing the opportunity to work on this exciting project. 
+I would like to express my gratitude to Bitcamp 2023 for providing the opportunity to work on this exciting project. 
 
 ## Demo Picture
 ![image](https://github.com/shashanksp04/BitCamp-2023---FRONTEND/assets/87560114/5f0cc5f8-9edf-400c-87b4-7dda1fdfc804)
