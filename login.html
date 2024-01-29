@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup and Login Page</title>
+    <link rel="stylesheet" href="Logsty.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- <div class="form-container sign-up-form">
+            <h1>Sign Up</h1>
+            <form>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                <button type="submit"><a href="MainFile.html">Sign Up</a></button>
+                <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+            </form>
+        </div>
+        <br> -->
+        <div class="form-container login-form">
+            <h1>Login</h1>
+            <br>
+            <!-- <form>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit"><a href="MainFile.html" id="log">Login</a></button> 
+                <button type="submit"><a href="MainFile.html">Login</a></button>
+                <br>
+                <br>
+                <p>Don't have an account? <a href="SignUp.html" id="signup-link">Sign Up</a></p>
+            </form> -->
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit"><a href="MainFile.html">Login</a></button>
+                <br>
+                <br>
+                <p>Don't have an account? <a href="SignUp.html" id="signup-link">Sign Up</a></p>
+              </form>
+
+              <script>
+                const form = document.querySelector('form');
+                form.addEventListener('submit', function(event) {
+                    const username = document.getElementById('username');
+                    const password = document.getElementById('password');
+                    if (username.value === '' || password.value === '') {
+                        event.preventDefault();
+                        alert('Please fill out all fields.');
+                    }
+                });
+              </script> 
+
+              
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

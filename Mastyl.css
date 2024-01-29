@@ -1,0 +1,143 @@
+body {
+    background-color: #eebb99;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* background-image: url('Documents/background.jpg'); */
+    background-size: 100% auto;
+  }
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 870px;
+    z-index: -1;
+  }
+  header {
+    background-color: #007bff;
+    /* width: 1px;
+    height: 80px; */
+    color: #fff;
+    padding: 10px;
+    /* margin-bottom: 600px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .game-name {
+    font-size: larger;
+    font-weight: bolder;
+    /* margin-left: 250px;
+    margin-right: 500px; */
+    font-size: 50px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    /* margin-right: -1200px;
+    */
+  }
+  
+  nav li {
+    /* margin-left: 500px; */
+    display: inline;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  nav a:hover{
+    color: red;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* margin-left: 200px; */
+  }
+  
+  #welcome{
+    /* background-color: rgba(206, 33, 14, 0.781); */
+    opacity: 1;
+    font-family: 'Fruktur';
+    padding: 20px;
+    flex-basis: 60%;
+    /* text-shadow: 5px 5px 2px white, 5px 5px 5px +rod; */
+    text-shadow: 3.5px 3.5px 2px white;
+  }
+  
+  .leaderboard-block {
+    /* background-color: rgb(252, 96, 151); */
+    padding: 20px;
+    opacity: 1;
+    flex-basis: 35%;
+    color: red;
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 50px;
+    /* margin-top: 200px; */
+    /* height: 400px;
+    width: 250px; */
+    /* margin-right: 350px; */
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 50px;
+    text-shadow: 5px 5px 2px white;
+  }
+
+  .subheading {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  login:hover{
+    color: red;
+  }
+
+  signUp:hover{
+    color: red;
+  }
+
+  ol {
+    padding-right: 0px;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+   
+  }
+  
+  ol li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px whitesmoke;
+  }
+
+  #button{
+    color: Gold; 
+    font-style: italic; 
+    font-size: medium;
+    width: 160px;
+    height: 55px;
+    background-color: black;
+    margin-top: 40px;
+    margin-left: 200px;
+  }
+  

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CircuitChaos - Homepage</title>
+  <link rel="stylesheet" href="Mastyl.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" >
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" >
+
+
+</head>
+<body>
+  <video autoplay loop muted class="video-background">
+    <source src="Documents/CARS.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <audio id = "myaudio" autoplay loop>
+    <source src="Documents/Song.mp3" type="audio/mp3">
+     Your browser does not support the audio tag
+   </audio> 
+   <script>
+    const audio = document.getElementById('myaudio');
+    audio.addEventListener('loadeddata', function(){
+      audio.play();
+    });
+    // document.querySelector('audio').muted = false;
+  </script> 
+  <header>
+    <!-- <h1 class="game-name">CircuitChaos</h1> -->
+    <img src="Documents/logo.png" height="120px" width="140px" style="margin-left: 150px;">
+    <nav style="margin-right: 120px;">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="SignUp.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="welcome-block">
+      <h2 id="welcome">WELCOME, PLAYER</h2>
+      <!-- <p>Join the battle and conquer the world!</p> -->
+    </div>
+    <div class="leaderboard-block">
+      <h3>Leaderboard</h3>
+      <ol>
+        <li>Player 1</li>
+        <li>Player 2</li>
+        <li>Player 3</li>
+        <li>Player 4</li>
+        <li>Player 5</li>
+      </ol>
+    </div>   
+  </main>
+
+  <a href="Video.html"> 
+    <button id="button" style="font-size: larger; font-weight: bold;font-style: italic;">Play Game</button>
+  </a>
+
+</body>
+</html>

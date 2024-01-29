@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup and Login Page</title>
+    <link rel="stylesheet" href="Logsty.css">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image:url(Documents/car1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 100px;
+    margin-left: 250px; 
+    padding: 0px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+form a:hover{
+    color: red;
+}
+
+form submit:hover{
+    color: red;
+}
+
+form container sign-up form{
+    margin-right: 20px;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-container sign-up-form">
+            <h1>Sign Up</h1>
+            <br>
+            <form>
+                <!-- <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                <button type="submit"><a href="MainFile.html">Sign Up</a></button>
+                <br>
+                <br>
+                <p>Already have an account? <a href="login.html" id="login-link">Login</a></p> -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <label for="emailId">EmailId:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <label for="Confirm-password">Confirm-Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                <button type="submit"><a href="MainFile.html">Sign Up</a></button>
+                <br>
+                <br>
+                <p>Already have an account? <a href="login.html" id="login-link">Login</a></p> 
+            </form>
+
+            <script>
+                const form = document.querySelector('form');
+                form.addEventListener('submit', function(event) {
+                    const username = document.getElementById('username');
+                    const password = document.getElementById('password');
+                    if (username.value === '' || password.value === '') {
+                        event.preventDefault();
+                        alert('Please fill out all fields.');
+                    }
+                });
+            </script>
+        </div>
+        <br>
+        <!-- <div class="form-container login-form">
+            <h1>Login</h1>
+            <br>
+            <form>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit"><a href="MainFile.html" id="log">Login</a></button>
+                <br>
+                <br>
+                <p>Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+            </form>
+        </div> -->
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

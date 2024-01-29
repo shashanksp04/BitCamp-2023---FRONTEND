@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Playground</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+    header {
+      background-color: #fcfafa;
+      color: black;
+      padding: 20px;
+      width: 100%;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      border: 5px solid greenyellow;
+    }
+    .code-block-container {
+      flex: 1;
+      margin-left: 30px;
+      background-color: #fff;
+      margin-right: 20px;
+    }
+    .code-block {
+      background-color: black;
+      padding: 20px;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 470px;
+      resize: none;
+      background-color: black;
+      color: white;
+    }
+
+    #message{
+      margin-left: 40px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      color: red;
+      text-shadow: 2px 2px 4px goldenrod;
+    }
+
+    button {
+      background-color: rgb(43, 89, 173);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      margin-left: 105px;
+      margin-right: 105px;
+      cursor: pointer;
+    }
+    
+    button:hover{
+      color: red;
+    }
+
+    track{
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      border: 10px solid black ;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Code Playground</h1>
+  </header>
+  <div class="container">
+    <div class="code-block-container">
+      <h2 id="message">Your Implementation</h2>
+      <div class="code-block">
+        <textarea id="code-input" placeholder="Enter your code here"></textarea>
+        <button onclick="runCode()">Run</button>
+      </div>
+      <div class="output">
+        <pre id="output-area"></pre>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="track">
+     
+  </div>
+  
+  <script>
+    function runCode() {
+      // Get the code input from the textarea
+      const codeInput = document.getElementById('code-input').value;
+      
+      // Evaluate the code and capture the output
+      let output;
+      try {
+        output = eval(codeInput);
+      } catch (error) {
+        output = error.toString();
+      }
+      
+      // Display the output in the output area
+      const outputArea = document.getElementById('output-area');
+      outputArea.textContent = output;
+    }
+  </script>
+</body>
+</html>
+
